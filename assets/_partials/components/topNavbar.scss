@@ -1,0 +1,87 @@
+.top__navbar {
+    height: 50px;
+    background-color: $color-white;
+    font-size: 1.3rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    .wrapper {
+        height: 100%;
+        display: flex;
+
+        > div {
+            width: 33.3%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            a {
+                color: $color-black;
+            }
+        }
+
+        .navbar__block-left {
+            justify-content: flex-start;
+        }
+        .navbar__block-middle {
+            justify-content: center;
+
+            input {
+                width: 100%;
+            }
+        }
+        .navbar__block-right {
+            justify-content: flex-end;
+
+            > * {
+                margin-left: .8rem;
+            }
+
+            .profil-pic {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                position: relative;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+
+                &:hover .navbar__menu{
+                    display: block;
+                }
+
+                .navbar__menu {
+                    position: absolute;
+                    top: 35px;
+                    right: 0;
+                    width: fit-content;
+                    padding: 20px;
+                    border-radius: 10px;
+                    font-size: 1rem;
+                    box-shadow: 0 0 6px 3px rgba($color: #000000, $alpha: .1);
+                    background-color: $color-white;
+                    display: none;
+
+                    i {
+                        margin-right: 1rem;
+                    }
+
+                    a {
+                        text-decoration: none;
+                    }
+
+                    > * {
+                        margin-bottom: 5px;
+                        display: flex;
+                        align-items: center;
+
+                        &:last-child {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

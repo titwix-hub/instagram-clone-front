@@ -9,9 +9,33 @@
 */
 //@import "_partials/pages/login.scss";
 
+/**
+ Components
+*/
+@import "_partials/components/topNavbar.scss";
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.wrapper-full {
+    width: 100vw;
+}
+
+input {
+    border-radius: 10px;
+    border: 1px solid $color-grey;
+    padding: 7px 12px;
 }
